@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>    
+<body>     
+  
+ <!-- ------NAV BAR--------- -->
+ <nav id="nav">
+  <a href="#" id="lo"><i class="fa-brands fa-opencart"></i></a>
+  <h2 id="nav-head">MY GROCERY</h2>
+
+  <a href="#home">HOME</a>
+  <a href="#con">ABOUT</a>
+  <a href="#Pro">PRODUCT</a>
+  <a href="#" id="contac">CONTACT</a>
+
+
+  <button id="sign">Sign In</button>
+  <a id="icon" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+</nav>
+<!-- ----------------sign in form --------------- -->
+<div class="popup">
+  <div id="close">&times;</div>
+  <div class="form">
+      <h2>Login</h2>
+      <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Your Email">
+      </div>
+      <div class="form-element">
+          <label for="Password">Password</label>
+          <input type="password" id="Password" placeholder="Enter Your Password">
+      </div>
+      <div class="form-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember Me</label>
+      </div>
+      <div class="form-element">
+          <button>Sign in</button>
+      </div>
+      <div class="form-element">
+          <a href="#">Forgot Password?</a>
+      </div>
+  </div>
+</div>
+<!-- -------------------------contactus ---------------------------- -->
+
+<div class="wrapper" id="wrap"> 
+  <span class="close-btn" id="closed">&times;</span>
+  <h2>Contact us</h2> 
+  <div id="error_message"></div> 
+  <form action="" id="myform" onsubmit="return validate();"> 
+      <div class="input_field"> 
+          <input type="text" placeholder="Name" id="name"> 
+      </div> 
+     
+      <div class="input_field"> 
+          <input type="text" placeholder="Phone" id="phone"> 
+      </div> 
+      <div class="input_field"> 
+          <input type="text" placeholder="Email" id="email"> 
+      </div> 
+      <div class="input_field"> 
+          <textarea placeholder="Message" id="message"></textarea> 
+      </div> 
+      <div class="btn"> 
+          <input type="submit"> 
+      </div> 
+  </form> 
+</div> 
+<!-- -------------------------home--------------------------        -->
+  <section id="home">
+  
+  <h1 class="text-center">ORGANIC GROCERY</h1>
+  <p class="text-center">Variety's the very spice of the life,That gives it all its flavor</p>
+
+  <div class="input-group" id="input-group">
+    <input type="text" class="form-control" placeholder="Search Product" id="search-input">
+    <a href="#" id="b">Get Start</a>
+</div>
+  </section>
+ <!-- ----------------product---------------- -->
+  <section id="Pro">
+  <section class="pt-5 " id="spices">
+      <div class="container">
+          <div class="row">
+              <div class="col-6"id="title">
+                  <h3 class="mb-3">SPICES</h3>
+              </div>
+              <div class="col-6 text-right"id="bt">
+                 <a class="btn btn-primary mb-3 mr-1" 
+                    href="#carouselExampleIndicators2"
+                    role="button"
+                     data-slide="prev">
+                     <i class="fa fa-arrow-left"></i>
+                 </a>
+                 <a class="btn btn-primary mb-3"
+                    href="#carouselExampleIndicators2"
+                    role="button"
+                    data-slide="next">
+                     <i class="fa fa-arrow-right"></i>
+                 </a>
+              </div>
+              <div class="col-12">
+                <div id="carouselExampleIndicators2"  class="carousel slide" data-ride="carousel" >
+                  <div class="carousel-inner" id="item">
+                    
+                    
+                    <div class="carousel-item active">
+                      <div class="row">
+                       
+                        <div class="col-md-3 mb-3">
+                          <div class="card" >
+                              <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/06//Turmeric-powder-1kg-600x600.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">Turmeric-powder</h4>
+                              <div class="dropdown">
+                                <select class="weight-select" >
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                             <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                   
+                            </div>                   
+                          </div>                                          
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/06//Kashmiri-chilli-powder-500g-600x600.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">Kashmiri-chilli</h4>
+                              <div class="dropdown">
+                                <select class="weight-select" >
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                 
+                            </div>                   
+                          </div>                                          
+                        </div>
+                        <div class="col-md-3 mb-3">                   
+                          <div class="card">              
+                             <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/06//Coriander-powder-1kg-600x600.jpg">      
+                           <div class="card-body">         
+                              <h4 class="card-title text-center">Coriander-powder</h4> 
+                              <div class="dropdown">
+                                <select class="weight-select" >
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>
+                            </div>                 
+                          </div>                    
+                        </div>
+                        <div class="col-md-3 mb-3">                   
+                          <div class="card">              
+                             <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/06//Red-chilli-powder-500g-600x600.jpg">      
+                           <div class="card-body">         
+                              <h4 class="card-title text-center">Red-chilli-powder</h4> 
+                              <div class="dropdown">
+                                <select class="weight-select">
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>
+                            </div>                 
+                          </div>                    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <div class="row">
+                       
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/06//sambar-powder-1kg-600x600.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">sambar-powder</h4>
+                              <div class="dropdown">
+                                <select class="weight-select" >
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                   
+                            </div>                   
+                          </div>                                          
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/06//garam-masala-250g-600x600.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">garam-masala</h4>
+                              <div class="dropdown">
+                                <select class="weight-select" >
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                 
+                            </div>                   
+                          </div>                                          
+                        </div>
+                        <div class="col-md-3 mb-3">                   
+                          <div class="card">              
+                             <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/06//white-pepper-powder-1kg-600x600.jpg">      
+                           <div class="card-body">         
+                              <h4 class="card-title text-center">white-pepper</h4> 
+                              <div class="dropdown">
+                                <select class="weight-select">
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                                    
+                            </div>                 
+                          </div>                    
+                        </div>
+                        <div class="col-md-3 mb-3">                   
+                          <div class="card">              
+                             <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/06//Black-pepper-powder-500g-1-600x600.jpg">      
+                           <div class="card-body">         
+                              <h4 class="card-title text-center">Black-pepper</h4> 
+                              <div class="dropdown">
+                                <select class="weight-select">
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                                   
+                            </div>                 
+                          </div>                    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <div class="row">
+                       
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/08//Cinnamon-600x600.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">Cinnamon</h4>
+                              <div class="dropdown">
+                                <select class="weight-select">
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                   
+                            </div>                   
+                          </div>                                          
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/08//Cardamom-6mm-500g-600x600.jpg">
+                            <div class="card-body">
+                              <h4 class="card-title text-center">Cardamom</h4>
+                              <div class="dropdown">
+                                <select class="weight-select">
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                  
+                            </div>                   
+                          </div>                                          
+                        </div>
+                        <div class="col-md-3 mb-3">                   
+                          <div class="card">              
+                             <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/05//whole-chilli-1kg-600x600.jpg">      
+                           <div class="card-body">         
+                              <h4 class="card-title text-center">whole-chilli</h4> 
+                              <div class="dropdown">
+                                <select class="weight-select">
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                                    
+                            </div>                 
+                          </div>                    
+                        </div>
+                        <div class="col-md-3 mb-3">                   
+                          <div class="card">              
+                             <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/10//curry-leaf-dry-600x600.jpg">      
+                           <div class="card-body">         
+                              <h4 class="card-title text-center">curry-leaf-dry</h4> 
+                              <div class="dropdown">
+                                <select class="weight-select" >
+                                <option value="">1kg</option>
+                                <option value="">500g</option>
+                                <option value="">250g</option>
+                              </select>
+                              <div id="price"> &#8377 300</div>
+                              </div>
+                              <button class="btn add-to-cart">ADD TO CART</button>                                    
+                            </div>                 
+                          </div>                    
+                        </div>
+                      </div>
+                    </div>
+                  </div>                           
+                </div>                               
+              </div>                                  
+          </div>
+      </div>
+  </section>
+  <section class="grains" id="foodgrains">
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="title">
+                <h3 class="mb-3">GRAIN</h3>
+            </div>
+            <div class="col-6 text-right" id="bt">
+               <a class="btn btn-primary mb-3 mr-1" 
+                  href="#carouselExampleIndicators3"
+                  role="button"
+                   data-slide="prev">
+                   <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="btn btn-primary mb-3"
+                  href="#carouselExampleIndicators3"
+                  role="button"
+                  data-slide="next">
+                   <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+            <div class="col-12">
+              <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="item">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/black-chana.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Black-chana</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/dal.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Kashmiri-chilli</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/green-gram.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Green-gram</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/green-peas.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Green-peas</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/red-cow-pea.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Red-cow-pea</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/Roasted-Chana.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Roasted-Chana</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/soya-beans.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Soya-beans</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/Urdal.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Urdal</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/10/white-channa.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">White-channa</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://akdoorsteps.com/admin/productImages/6fa22369a77536ae268214551a8af627.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Roasted gram whole</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://akdoorsteps.com/admin/productImages/9b3a467d22308422f2b184e8548036d8.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Gram Dal</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://akdoorsteps.com/admin/productImages/de608fa59ab381b8b658ecd2ff3e3844.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">White Mochchai</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="pt-1" id="Rice">
+  <div class="container">
+      <div class="row">
+          <div class="col-6"id="title">
+              <h3 class="mb-3">RICE</h3>
+          </div>
+          <div class="col-6 text-right"id="bt">
+             <a class="btn btn-primary mb-3 mr-1" 
+                href="#carouselExampleIndicators4"
+                role="button"
+                 data-slide="prev">
+                 <i class="fa fa-arrow-left"></i>
+             </a>
+             <a class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators4"
+                role="button"
+                data-slide="next">
+                 <i class="fa fa-arrow-right"></i>
+             </a>
+          </div>
+          <div class="col-12">
+            <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/08/Basmati-Rice.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title text-center">Basmati-Rice</h4>
+                          <div class="dropdown">
+                            <select class="weight-select">
+                            <option value="400">1kg</option>
+                            <option value="200">500g</option>
+                            <option value="100">250g</option>
+                          </select>
+                          <div id="price"> &#8377 300</div>
+                          </div>
+                          <button class="btn add-to-cart">ADD TO CART</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/08/brown-rice.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title text-center">Brown-rice</h4>
+                          <div class="dropdown">
+                            <select class="weight-select">
+                            <option value="">1kg</option>
+                            <option value="">500g</option>
+                            <option value="">250g</option>
+                          </select>
+                          <div id="price"> &#8377 300</div>
+                          </div>
+                          <button class="btn add-to-cart">ADD TO CART</button>                 
+                        </div>                   
+                      </div>                                          
+                    </div>
+                    <div class="col-md-4 mb-3">                   
+                      <div class="card">              
+                         <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/08/biriyani-rice.jpg">      
+                       <div class="card-body">         
+                          <h4 class="card-title text-center">Biriyani-rice</h4> 
+                          <div class="dropdown">
+                            <select class="weight-select">
+                            <option value="">1kg</option>
+                            <option value="">500g</option>
+                            <option value="">250g</option>
+                          </select >
+                          <div id="price"> &#8377 300</div>
+                          </div>
+                          <button class="btn add-to-cart">ADD TO CART</button>
+                        </div>                 
+                      </div>                    
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                   
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/08/raw-rice.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title text-center">Raw-rice</h4>
+                          <div class="dropdown">
+                            <select class="weight-select" >
+                            <option value="">1kg</option>
+                            <option value="">500g</option>
+                            <option value="">250g</option>
+                          </select>
+                          <div id="price"> &#8377 300</div>
+                          </div>
+                          <button class="btn add-to-cart">ADD TO CART</button>                   
+                        </div>                   
+                      </div>                                          
+                    </div>
+                    <div class="col-md-4 mb-3">                   
+                      <div class="card">              
+                         <img class="img-fluid"  alt="100%x280"  src="https://spicemunnar.com/wp-content/uploads/2020/08/ponnin-rice.jpg">      
+                       <div class="card-body">         
+                          <h4 class="card-title text-center">Ponnin-rice</h4> 
+                          <div class="dropdown">
+                            <select class="weight-select">
+                            <option value="">1kg</option>
+                            <option value="">500g</option>
+                            <option value="">250g</option>
+                          </select>
+                          <div id="price"> &#8377 300</div>
+                          </div>
+                          <button class="btn add-to-cart">ADD TO CART</button>
+                        </div>                 
+                      </div>                    
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2020/08/white-rice.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title text-center">White-rice</h4>
+                          <div class="dropdown">
+                            <select class="weight-select">
+                            <option value="">1kg</option>
+                            <option value="">500g</option>
+                            <option value="">250g</option>
+                          </select>
+                          <div id="price"> &#8377 300</div>
+                          </div>
+                          <button class="btn add-to-cart">ADD TO CART</button>                 
+                        </div>                   
+                      </div>                                          
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>                           
+            </div>                               
+          </div>                                  
+      </div>
+  </div>
+  </section>
+  <section class="pt-1" id="dry">
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="title">
+                <h3 class="mb-3">DRY FRUITS</h3>
+            </div>
+            <div class="col-6 text-right" id="bt">
+               <a class="btn btn-primary mb-3 mr-1"
+                  href="#carouselExampleIndicators5"
+                  role="button"
+                  data-slide="prev">
+                   <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="btn btn-primary mb-3"
+                  href="#carouselExampleIndicators5"
+                  role="button"
+                  data-slide="next">
+                   <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+            <div class="col-12">
+              <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="item">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//Peanut-500g-600x600.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Basmati-Rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//buy-apricot-online-600x600.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Brown-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//Dates-500g-600x600.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Biriyani-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//PISTA-600x600.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Raw-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//badam-munnar-spices-1-600x600.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Ponnin-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//Cashew-nut-250g-600x600.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">White-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//RASINS-600x600.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">Raw-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                           <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//raisins-1kg-600x600.jpg">
+                         <div class="card-body">
+                            <h4 class="card-title text-center">Ponnin-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="https://spicemunnar.com/wp-content/uploads/2019/09//RASINBLACK-600x600.jpg">
+                          <div class="card-body">
+                            <h4 class="card-title text-center">White-rice</h4>
+                            <div class="dropdown">
+                              <select class="weight-select">
+                              <option value="1kg">1kg</option>
+                              <option value="500g">500g</option>
+                              <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                            </div>
+                            <button class="btn add-to-cart">ADD TO CART</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <section id="Product">
+    <div class="container my-3">
+        <div class="col-6" id="title">
+            <h3 class="mb-3">Oil</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-12">
+                <div class="card">
+                    <img src="https://spicemunnar.com/wp-content/uploads/2020/06//olive-oil-600x600.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Olive-oil</h5>
+                        <div class="dropdown">
+                            <select class="weight-select">
+                                <option value="1kg">1kg</option>
+                                <option value="500g">500g</option>
+                                <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                        </div>
+                        <button class="btn add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <div class="card">
+                    <img src="https://spicemunnar.com/wp-content/uploads/2020/06//sunflower-oil-600x600.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sunflower-oil</h5>
+                        <div class="dropdown">
+                            <select class="weight-select">
+                                <option value="1kg">1kg</option>
+                                <option value="500g">500g</option>
+                                <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                        </div>
+                        <button class="btn add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <div class="card">
+                    <img src="https://spicemunnar.com/wp-content/uploads/2020/06//ghee-600x600.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ghee</h5>
+                        <div class="dropdown">
+                            <select class="weight-select">
+                                <option value="1kg">1kg</option>
+                                <option value="500g">500g</option>
+                                <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                        </div>
+                        <button class="btn add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <div class="card">
+                    <img src="https://spicemunnar.com/wp-content/uploads/2020/06//Coconut-oil-250g-600x600.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coconut-oil</h5>
+                        <div class="dropdown">
+                            <select class="weight-select">
+                                <option value="1kg">1kg</option>
+                                <option value="500g">500g</option>
+                                <option value="250g">250g</option>
+                            </select>
+                            <div id="price"> &#8377 300</div>
+                        </div>
+                        <button class="btn add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </section>
+ <!-- ------------------------card-------------------------- -->
+  <div class="cart-container hidden" id="cart-container">
+  <div class="cart-header">Cart</div>
+  <div id="cart-items"></div>
+  <div class="cart-total" id="cart-total">Total: &#8377 0</div>
+  <div class="cart-header"> <button id="close-cart"><i class="fa-regular fa-circle-xmark"></i></button></div>
+  </div>
+<!-- ----------------About------------------------------ -->
+  <div class="container-fluid " id="con" >
+     <div class="row" id="r">
+      <div class="col-lg-5 col-md-6 col-12">
+          <img src="https://img.freepik.com/free-vector/100-organic-food-label-sticker-with-leaves_1017-20572.jpg?size=626&ext=jpg&ga=GA1.1.1657819223.1709699406&semt=ais_user" class="img-fluid" alt="" >
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 py-5">
+          <h1>ABOUT US</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati sint quasi delectus quis nesciunt ullam autem quidem possimus molestias officia natus, provident temporibus magnam at eius. Sequi, incidunt beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati sint quasi delectus quis nesciunt ullam autem quidem possimus molestias officia natus, provident temporibus magnam at eius. Sequi, incidunt beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati sint quasi delectus quis nesciunt ullam autem quidem possimus molestias officia natus, provident temporibus magnam at eius. Sequi, incidunt beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati sint quasi delectus quis nesciunt ullam autem quidem possimus molestias officia natus, provident temporibus magnam at eius. Sequi, incidunt beatae.</p>
+      </div>
+     </div>
+  </div>
+  <!-- ---------------------------footer-------------------- -->
+  <footer >
+  <div class="contnaier">
+      <div class="big-rows">
+          <h6 class="logo">MY GROCERY</h6>
+          <p>Lorem ipsum dolor sit, amet consectetur 
+              adipisicing elit. Dolorum perferendis iste officia!</p>
+              <div class="coical-icon">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </div>
+      </div>
+
+      <div class="row">
+          <h2 class="tittle">Information</h2>
+          <div class="links">
+              <a href="#">Our Stores</a>
+              <a href="#">About US</a>
+              <a href="#">Business</a>
+              <a href="#">Delivery</a>
+          </div>
+      </div>
+
+      <div class="row">
+          <h2 class="tittle">Useful Links</h2>
+          <div class="links">
+              <a href="#">Our Stores</a>
+              <a href="#">About US</a>
+              <a href="#">Business</a>
+              <a href="#">Delivery</a>
+          </div>
+      </div>
+
+      <div class="row">
+          <h2 class="tittle">Service</h2>
+          <div class="links">
+              <a href="#">Our Stores</a>
+              <a href="#">About US</a>
+              <a href="#">Business</a>
+              <a href="#">Delivery</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="bottom-footer">
+      <div class="content">
+          <p>&copy; 2024 | Made by Love With <span>MY GROCERY</span></p>
+
+          
+      </div>
+  </div>
+  </footer>
+ <!-- JavaScript dependencies -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript"src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+    
+</body>
+</html>
+
+
+
+
+ 
+                                           
+                                        
+                                   
+                    
+                       
+                    
+                
+          
+   
+    
